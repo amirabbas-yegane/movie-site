@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="FontAwesome.Pro.6.4.0/Web/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>I movie</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">iMovies</a>
+      <ul class="nav">
+        <li>
+          <a href="#"><i class="fa-solid fa-house-chimney"></i></a>
+        </li>
+        <li><a href="#">Adults</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Trend</a></li>
+        <li><a href="#">My List</a></li>
+      </ul>
+      <div class="search">
+        <input type="text" placeholder="Search" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </header>
+    <div class="banner">
+      <div class="content active">
+        <img src="images/poor things.png" alt="" class="movie-title" />
+        <h4>
+          <span>2023</span><span><i>R</i></span
+          ><span>2h 2m</span><span>Romance</span>
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, aliquam
+          fugiat sed blanditiis, qui veniam nulla mollitia repellendus inventore
+          tempore corporis culpa natus voluptatibus quisquam et nobis molestiae
+          maiores delectus unde quo accusamus. Numquam, unde laboriosam! Maiores
+          mollitia sed neque voluptates aut, nisi, fuga quasi esse quidem
+          obcaecati rem odit!
+        </p>
+        <div class="button">
+          <a href="#"><i class="fa-solid fa-play"></i>Watch</a>
+          <a href="#"><i class="fa-solid fa-plus"></i>My List</a>
+        </div>
+      </div>
+      <div class="carousel-box">
+        <div class="carousel">
+          <div class="carousel-item" onclick="changeBg('poor things2.jpg', 'poor things1');">
+            <img src="images/poor things1.jpg" alt="" />
+          </div>
+          <div class="carousel-item" onclick="changeBg('argylle2.jpg', 'argylle1');">
+            <img src="images/argylle1.jpg" alt="" />
+          </div>
+          <div class="carousel-item" onclick="changeBg('panda2.jpg', 'panda1');">
+            <img src="images/panda1.jpg" alt="" />
+          </div>
+          <div class="carousel-item" onclick="changeBg('dune2.jpg', 'dune1');">
+            <img src="images/dune1.jpg" alt="" />
+          </div>
+          <div class="carousel-item" onclick="changeBg('madame web2.jpg', 'madame web1');">
+            <img src="images/madame web1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <a href="#" class="play" onclick="toggleVideo();" ><i class="fa-regular fa-circle-play"></i>Watch Trailer</a>
+      <ul class="sci">
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="trailer">
+        <video src="https://www.imdb.com/video/vi2345322265/?playlistId=tt14230458&ref_=ext_shr_lnk" muted controls="true" autoplay="true"></video>
+        <img class="close" src="images/close.png" alt="" onclick="toggleVideo();">
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".carousel").carousel();
+      });
+    </script>
+  </body>
+</html>
